@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2563EB;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 5px;
+}
+
+.category-buttons button:hover {
+  background-color: #e5e7eb;
+}
+
+.category-buttons button.active {
+  background-color: #2563EB;
+  color: white;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+td a {
+  color: #2563EB;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.bg-red-200 { background-color: #FECACA; }
+.bg-orange-200 { background-color: #FED7AA; }
+.bg-yellow-200 { background-color: #FEF08A; }
+.bg-green-200 { background-color: #BBF7D0; }
+
+.legend {
+  margin-top: 20px;
+}
+
+.legend h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Styles for IndicatorDetail */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563EB;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e0e0e0;
+}
+
+.recharts-legend-item {
+  font-size: 0.9rem;
+}
+
+.recharts-text {
+  font-size: 0.8rem;
+}
+
+.recharts-bar-rectangle {
+  fill: #8884d8;
+}
+
+.recharts-reference-line line {
+  stroke: #ff0000;
+  stroke-dasharray: 3 3;
+}
+
+.recharts-reference-line text {
+  fill: #ff0000;
+  font-size: 0.8rem;
+}
+
+/* New styles for centering numbers and adjusting column widths */
+.data-column {
+  text-align: center;
+  width: 120px; /* Adjust this value based on the longest column title (European/Other) */
+}
+
+table th.data-column,
+table td.data-column {
+  text-align: center;
+}
